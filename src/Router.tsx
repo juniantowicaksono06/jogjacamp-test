@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
+import { Route, createBrowserRouter, createRoutesFromElements, Navigate } from 'react-router-dom';
 import RootLayout from './layout/RootLayout';
 
 const Home = React.lazy(() => import('./pages/Home'));
@@ -13,9 +13,7 @@ const Router = createBrowserRouter(
             <Route
                 index
                 element={
-                    <React.Suspense fallback={<div>Loading...</div>}>
-                        <Home />
-                    </React.Suspense>
+                    <Navigate to="/test-layout" replace />
                 }
             />
             <Route 

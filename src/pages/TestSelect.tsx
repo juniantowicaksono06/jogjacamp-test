@@ -141,7 +141,7 @@ export default function TestSelect() {
     return <>
         <Loading isLoading={isLoading} />
         <div className="grid grid-cols-3 gap-3">
-            <div className="px-3 py-2 col-span-3 md:col-span-1 bg-gray-200 rounded-lg h-96">
+            <div className="px-3 py-2 col-span-3 lg:col-span-1 bg-gray-200 rounded-lg h-96">
                 <h3 className="mb-3 text-2xl">Filter</h3>
                 <div className="mb-3">                    
                     <label htmlFor="provinsi">Provinsi</label>
@@ -193,29 +193,29 @@ export default function TestSelect() {
                     </select>
                 </div>
             </div>
-            <div className="px-3 py-2 col-span-3 md:col-span-2">
-                <div className="border border-gray-300 rounded-lg py-2 px-3 mb-2">
+            <div className="py-2 lg:px-3 col-span-3 lg:col-span-2">
+                <div className="border border-gray-300 rounded-lg py-2 px-3 mb-3">
                     <h3 className="text-2xl font-bold">{
                         dataProvince.find((province) => province.id === idProvince)?.name    
                     }</h3>
                     <p className="mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <p className="mt-3">Last updated 5 mins ago</p>
                 </div>
-                <div className="border border-gray-300 rounded-lg py-2 px-3 mb-2">
+                <div className="border border-gray-300 rounded-lg py-2 px-3 mb-3">
                     <h3 className="text-2xl font-bold">{
                         dataKota.find((kota) => kota.id === idKota)?.name    
                     }</h3>
                     <p className="mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <p className="mt-3">Last updated 5 mins ago</p>
                 </div>
-                <div className="border border-gray-300 rounded-lg py-2 px-3 mb-2">
+                <div className="border border-gray-300 rounded-lg py-2 px-3 mb-3">
                     <h3 className="text-2xl font-bold">{
                         dataKecamatan.find((kecamatan) => kecamatan.id === idKecamatan)?.name    
                     }</h3>
                     <p className="mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <p className="mt-3">Last updated 5 mins ago</p>
                 </div>
-                <div className="border border-gray-300 rounded-lg py-2 px-3 mb-2">
+                <div className="border border-gray-300 rounded-lg py-2 px-3 mb-3">
                     <h3 className="text-2xl font-bold">{
                         dataDesa.find((desa) => desa.id === idDesa)?.name    
                     }</h3>
