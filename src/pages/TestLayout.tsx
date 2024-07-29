@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { useRef } from "react";
 export default function TestLayout() {
     const [currentIndex, setcurrentIndex] = useState(0);
-    const [images, setImages] = useState([
+    const [images] = useState([
         '/images/1.webp', '/images/2.webp', '/images/3.webp',
     ]);
     const containerRef = useRef<HTMLDivElement>(null);

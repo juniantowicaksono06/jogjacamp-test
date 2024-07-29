@@ -2,7 +2,6 @@ import React from 'react';
 import { Route, createBrowserRouter, createRoutesFromElements, Navigate } from 'react-router-dom';
 import RootLayout from './layout/RootLayout';
 
-const Home = React.lazy(() => import('./pages/Home'));
 const TestLayout = React.lazy(() => import('./pages/TestLayout'));
 const TestLayoutForm = React.lazy(() => import('./pages/TestLayoutForm'));
 const TestSelect = React.lazy(() => import('./pages/TestSelect'));
